@@ -1,0 +1,15 @@
+2025-04-24 17:23:39,832 - INFO - Starting fraud detection pipeline...
+2025-04-24 17:23:39,832 - INFO - Reading data from transaction_data.csv
+2025-04-24 17:23:39,856 - INFO - Successfully read 5000 records
+2025-04-24 17:23:39,856 - INFO - Cleaning data...
+2025-04-24 17:23:39,857 - INFO - Removed 0 duplicate records
+2025-04-24 17:23:39,862 - INFO - Removed 0 records with missing values
+2025-04-24 17:23:39,867 - INFO - Applying rule-based fraud detection...
+2025-04-24 17:23:39,877 - INFO - High amount transactions: 4006
+2025-04-24 17:23:39,877 - INFO - High-risk merchant transactions: 0
+2025-04-24 17:23:39,877 - INFO - Rapid successive transactions: 0
+2025-04-24 17:23:39,878 - INFO - Total rule-based flagged: 4006
+2025-04-24 17:23:39,879 - INFO - Storing data in SQLite database: fraud_detection.db
+2025-04-24 17:23:39,974 - INFO - Successfully stored 5000 records
+2025-04-24 17:23:39,974 - INFO - Pipeline completed successfully!
+2025-04-24 17:23:39,975 - INFO - Summary: {'total_records': 5000, 'original_fraud_flags': np.int64(222), 'rule_based_flags': np.int64(4006), 'high_risk_transactions': np.int64(0)}
